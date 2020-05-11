@@ -8,3 +8,10 @@ for(let i = 0; i < images.length; i++){
   images[i].src = src
   console.log(`Replaced image ${images[i].src}`);
 }
+
+divs = document.getElementsByTagName('div');
+for(let i = 0; i < divs.length; i++){
+    innerHTML = divs[i].innerHTML.replace(/VER PERFIL/g, "");
+    innerHTML = innerHTML.replace(/¡PULSA AQUÍ!/g, "");
+    divs[i].innerHTML = innerHTML;
+}
